@@ -14,7 +14,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 ### Core Team
-- [Shaohuai Liu](https://liushaohuai5.github.io/) 
+- [Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), 
 
 ### Special Thanks
 - All contributors who help make this project better
