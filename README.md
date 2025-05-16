@@ -4,9 +4,12 @@ PowerFM is an open-source repository for foundation models in the power and ener
 ## 🚀 Getting Started with PowerFM
 
 ### RAG-based Foundation Models
+
+#### [Explore the Datacenter Siting Assistant: Solvtra](https://huggingface.co/spaces/zhangqianleo/datacenterAgent)
+
 This project explores the use of Retrieval Augmented Generation (RAG) with foundation models tailored for power systems. One key application is the **Datacenter Siting Assistant: Solvtra**. This tool leverages RAG by incorporating datacenter-specific data, including local regulations, environmental reports, and infrastructure details. As a result, it can provide detailed information for potential datacenter locations, such as land and electricity prices, and generate a map illustrating existing datacenter sites and relevant infrastructure.
 
-[Explore the Datacenter Siting Assistant: Solvtra](https://huggingface.co/spaces/zhangqianleo/datacenterAgent)
+
 
 ## 🤝 Contributing
 
