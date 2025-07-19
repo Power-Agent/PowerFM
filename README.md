@@ -22,7 +22,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 ### Core Team
-- [Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), [Qian Zhang](https://seas.harvard.edu/person/qian-zhang) 
+- [Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), [Qian Zhang](https://www.linkedin.com/in/qian-zhang-75323111b/) 
 
 ### Special Thanks
 - All contributors who help make this project better
