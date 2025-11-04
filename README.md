@@ -1,9 +1,6 @@
 # PowerFM
-<<<<<<< HEAD
 PowerFM is an open-source repository for foundation models in the power and energy domain. It both maintains original projects and collects community-contributed open-source projects, featuring fine-tuned and domain-trained models for tasks like load forecasting, fault detection, grid simulation, and agent control.
-=======
-PowerFM is an open-source repository for foundation models in the power and energy domain. It hosts and collects fine-tuned and domain-trained models for tasks like load forecasting, fault detection, grid simulation, and agent control.
->>>>>>> 0bda2dadb19974afeb1affb2983593589ce99fba
+
 
 ## 🚀 Getting Started with PowerFM
 
