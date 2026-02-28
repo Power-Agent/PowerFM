@@ -22,6 +22,20 @@ PowerFM is an open-source repository for foundation models in the power and ener
 
 **GridFM Community** The GridFM project pioneers the concept of FMs for the electric power grid to be trained on grid data – as opposed to text data – with the overarching goal to develop the underlying technology to cope with the increasing complexity and uncertainties of a faster growing grid (e.g., due to hyperscalar data centers, crypto mining etc.). More information about GridFM Community can be found [here](https://gridfm.org/)
 
+### mAIEnergy: Multimodal Foundation Models for Energy
+
+#### [Explore the mAIEnergy Dataset and Workflow](https://zenodo.org/records/16401633)
+
+**mAIEnergy** is a unified, open-access multimodal corpus designed to support Continual Pre-Training (CPT) of Large Language Models (LLMs) and the development of Retrieval-Augmented Generation (RAG) systems in the energy domain. The dataset integrates heterogeneous energy-related information into structured, machine-readable formats, enabling seamless integration into modern AI and multimodal learning pipelines.
+
+The corpus is organized into four top-level modules—textual, numerical, geospatial, and imagery—each accompanied by structured metadata and reproducible processing workflows. In total, the dataset contains approximately 50,000 textual documents, 20,000 images, 25 million numerical time-series records, and 2 million geospatial and relational data entries, primarily focusing on the European energy system.
+
+![mAIEnergy Dataset Overview](mAIEnergy.webp)
+
+Detailed datasets and fine-tuned models can be found below:
+- **Dataset**: [Zenodo Repository](https://zenodo.org/records/16401633)
+- **Trained/Fine-tuned Models**: [Hugging Face Model Hub](https://huggingface.co/ubitech-edg/models)
+
 ### RAG-based Foundation Models
 
 #### [Explore the Datacenter Siting Assistant: Solvtra](https://huggingface.co/spaces/zhangqianleo/datacenterAgent)
@@ -41,7 +55,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 ### Core Team
-- [Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), [Qian Zhang](https://www.linkedin.com/in/qian-zhang-75323111b/) 
+[Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), 
+[Costas Mylonas](https://www.linkedin.com/in/costas-mylonas-a0ab761b6/),
+[Magda Foti](https://www.linkedin.com/in/magda-foti/),
+[Qian Zhang](https://www.linkedin.com/in/qian-zhang-75323111b/) 
 
 ### Special Thanks
 - All contributors who help make this project better
