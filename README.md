@@ -16,6 +16,15 @@ PowerFM is an open-source repository for foundation models in the power and ener
 ![Data Generation Pipeline](data_generation_pipeline.png)
 
 
+### GridLDM: Language-Conditioned Latent Diffusion Models
+
+#### [Explore GridLDM for Cross-Domain Power-System Time-Series Synthesis](https://github.com/cyuting940612/GridLDM)
+
+**GridLDM** is a unified latent diffusion framework for controllable power-system time-series generation across heterogeneous domains, including EV charging, commercial load, wind generation, solar generation, and transient voltage response. GridLDM learns a shared latent generative prior and uses natural-language prompts with cross-attention to condition synthetic time-series generation across different data lengths, temporal structures, and operating contexts.
+
+[![GridLDM framework](GridLDM.png)](https://github.com/cyuting940612/GridLDM)
+
+
 ### GridFM: Graph Neural Network (GNN)-based Foundation Models
 
 #### [Explore the Dataset and Graph for GridFM](https://github.com/gridfm)
@@ -55,7 +64,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 ### Core Team
-[Shaohuai Liu](https://liushaohuai5.github.io/), [Alban Puech](https://www.alban-puech.fr/), 
+[Shaohuai Liu](https://liushaohuai5.github.io/), [Yuting Cai](https://www.linkedin.com/in/yuting-cai/), [Alban Puech](https://www.alban-puech.fr/), 
 [Costas Mylonas](https://www.linkedin.com/in/costas-mylonas-a0ab761b6/),
 [Magda Foti](https://www.linkedin.com/in/magda-foti/),
 [Qian Zhang](https://www.linkedin.com/in/qian-zhang-75323111b/) 
