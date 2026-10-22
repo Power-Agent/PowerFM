@@ -1,0 +1,132 @@
+{
+  "catalog_version": 1,
+  "title": "PowerFM project catalog",
+  "source": "README.md",
+  "projects": [
+    {
+      "id": "openpowerbench",
+      "name": "OpenPowerBench",
+      "category": "dataset-and-benchmark",
+      "description": "Multi-task, cross-temporal power-system dataset and benchmark covering topology-dependent and topology-independent tasks.",
+      "homepage": "https://github.com/OpenPowerBench/OpenPowerBench",
+      "tasks": [
+        "power-flow",
+        "optimal-power-flow",
+        "contingency-analysis",
+        "load-forecasting",
+        "price-prediction"
+      ],
+      "modalities": [
+        "numerical-time-series",
+        "network-topology"
+      ],
+      "resources": [
+        {
+          "type": "project",
+          "label": "Dataset and benchmark repository",
+          "url": "https://github.com/OpenPowerBench/OpenPowerBench"
+        }
+      ]
+    },
+    {
+      "id": "gridldm",
+      "name": "GridLDM",
+      "category": "generative-model",
+      "description": "Language-conditioned latent diffusion framework for controllable power-system time-series synthesis across heterogeneous domains.",
+      "homepage": "https://github.com/cyuting940612/GridLDM",
+      "tasks": [
+        "time-series-synthesis"
+      ],
+      "modalities": [
+        "time-series",
+        "text-conditioned-generation"
+      ],
+      "resources": [
+        {
+          "type": "project",
+          "label": "Source repository",
+          "url": "https://github.com/cyuting940612/GridLDM"
+        }
+      ]
+    },
+    {
+      "id": "gridfm",
+      "name": "GridFM Community",
+      "category": "foundation-model-community",
+      "description": "Community initiative focused on foundation models trained on electric power-grid data.",
+      "homepage": "https://github.com/gridfm",
+      "tasks": [
+        "grid-data-modeling"
+      ],
+      "modalities": [
+        "power-grid-data",
+        "graph-structured-data"
+      ],
+      "resources": [
+        {
+          "type": "project",
+          "label": "GitHub organization",
+          "url": "https://github.com/gridfm"
+        },
+        {
+          "type": "website",
+          "label": "GridFM website",
+          "url": "https://gridfm.org/"
+        }
+      ]
+    },
+    {
+      "id": "maienergy",
+      "name": "mAIEnergy",
+      "category": "multimodal-dataset",
+      "description": "Open-access multimodal energy corpus integrating textual, numerical, geospatial, and imagery data for continual pre-training and retrieval-augmented generation.",
+      "homepage": "https://zenodo.org/records/16401633",
+      "tasks": [
+        "continual-pretraining",
+        "retrieval-augmented-generation",
+        "multimodal-energy-research"
+      ],
+      "modalities": [
+        "text",
+        "numerical-time-series",
+        "geospatial",
+        "imagery"
+      ],
+      "resources": [
+        {
+          "type": "dataset",
+          "label": "Zenodo dataset record",
+          "url": "https://zenodo.org/records/16401633"
+        },
+        {
+          "type": "models",
+          "label": "Trained and fine-tuned models",
+          "url": "https://huggingface.co/ubitech-edg/models"
+        }
+      ]
+    },
+    {
+      "id": "solvtra",
+      "name": "Solvtra Datacenter Siting Assistant",
+      "category": "rag-assistant",
+      "description": "Retrieval-augmented assistant using datacenter-specific information such as regulations, environmental reports, and infrastructure details to support datacenter siting analysis.",
+      "homepage": "https://huggingface.co/spaces/zhangqianleo/datacenterAgent",
+      "tasks": [
+        "datacenter-siting",
+        "infrastructure-analysis",
+        "geospatial-visualization"
+      ],
+      "modalities": [
+        "text",
+        "geospatial"
+      ],
+      "resources": [
+        {
+          "type": "interactive-demo",
+          "label": "Hugging Face Space",
+          "url": "https://huggingface.co/spaces/zhangqianleo/datacenterAgent"
+        }
+      ]
+    }
+  ]
+}
