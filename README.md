@@ -16,6 +16,22 @@ PowerFM is an open-source repository for foundation models in the power and ener
 ![Data Generation Pipeline](data_generation_pipeline.png)
 
 
+### GridSFM: Small Foundation Models for AC Optimal Power Flow
+
+#### [Explore GridSFM: Open Code, Model Checkpoints, and Power-Grid Scenarios](https://github.com/microsoft/GridSFM)
+
+**GridSFM** is a graph-based foundation model for approximating AC optimal power-flow (AC-OPF) solutions across different grid topologies. It predicts operating states—including bus voltages, generator dispatch, and branch power flows—and classifies solution feasibility. The open release includes the inference code and grid-scenario pipeline; pretrained checkpoints and datasets are available through the [Microsoft Hugging Face collection](https://huggingface.co/collections/microsoft/gridsfm). This is a useful addition for research on fast grid simulation, contingency screening, and planning. The repository is released under the MIT license.
+
+[![GridSFM project overview](https://img.shields.io/badge/Microsoft%20Research-GridSFM-blue)](https://www.microsoft.com/en-us/research/publication/gridsfm-a-foundation-model-for-ac-optimal-power-flow/)
+
+
+### EnergyFM: Pretrained Foundation Models for Energy-Meter Analytics
+
+#### [Explore EnergyFM Models, Tutorials, and Evaluation Leaderboard](https://github.com/energyfms/notebooks)
+
+**EnergyFM** provides pretrained time-series foundation models for energy-meter data. Its **Energy-TTM** model targets short-term load forecasting, while **Energy-TSPulse** supports representation learning for anomaly detection and appliance classification. The repository includes zero-shot and fine-tuning notebooks, and a [public multi-task leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard) for comparing models across energy analytics tasks. Pretrained models are available from the [EnergyFM Hugging Face collection](https://huggingface.co/EnergyFM). The repository uses the Apache-2.0 license.
+
+
 ### GridLDM: Language-Conditioned Latent Diffusion Models
 
 #### [Explore GridLDM for Cross-Domain Power-System Time-Series Synthesis](https://github.com/cyuting940612/GridLDM)
