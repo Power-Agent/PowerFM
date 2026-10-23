@@ -2,18 +2,23 @@
 
 This note records candidate open-source resources that complement the projects already listed in the PowerFM README. It is intentionally separate from `README.md` and contains no implementation changes.
 
-## 1. PriceFM — Probabilistic Electricity-Price Forecasting
+## 1. PriceFM — Probabilistic Electricity-Price Forecasting Foundation Model
 
-- **Resource type:** Pretrained forecasting model, dataset, fine-tuning tutorial.
-- **Technical focus:** Probabilistic day-ahead electricity-price forecasting. The project describes a graph-informed model and a mixture-of-experts architecture for market-aware forecasting.
-- **Data and model availability:** The official repository links a Hugging Face dataset and provides pretrained weights and a fine-tuning notebook. Its README reports that the data was extended through 2026 with quarter-hourly resolution.
-- **Why it is relevant:** It covers electricity-market price uncertainty, a task not explicitly represented by the currently listed grid-operation and time-series generation projects.
-- **Links:** [Official repository](https://github.com/runyao-yu/PriceFM) · [Dataset](https://huggingface.co/datasets/RunyaoYu/PriceFM) · [Paper](https://arxiv.org/abs/2508.04875)
-- **Licensing note:** A root-level LICENSE file was not confirmed during this review. Verify the licenses for code, dataset, and model weights separately before describing them as openly licensed.
+- **Resource type:** Pretrained foundation model, multi-region dataset, fine-tuning tutorial, and research paper.
+- **Problem addressed:** Day-ahead electricity prices are interdependent across connected market regions and uncertain over time. PriceFM is designed to forecast multiple regions and forecast horizons jointly, while producing quantile forecasts rather than only a single point estimate.
+- **Dataset:** The paper and project documentation describe a European dataset spanning **24 countries and 38 regions**, from 2022 to 2026. The March 2026 project update reports a change from hourly to **15-minute (quarter-hourly)** resolution. Inputs include historical electricity prices and exogenous features such as load, solar, and wind forecasts.
+- **Architecture:** Regional price and exogenous features are mapped into a shared representation using a **Mixture-of-Experts (MoE) projection**. The model then applies a **sparse graph mask derived from transmission topology** to represent cross-region relationships. Hierarchical quantile heads produce probabilistic forecasts for multiple regions and lead times. This is the central technical distinction from a generic time-series model that treats regions independently or has no explicit grid-topology prior.
+- **Evaluation protocol:** The project’s March 2026 update reports evaluation expanded from one test fold in 2024–2025 to three test folds in 2025–2026, with both full-shot and cross-region zero-shot evaluation. These settings are useful when assessing transfer to regions with limited or no task-specific training data. Consult the paper and repository for exact metrics and baseline configurations rather than inferring performance from the project summary.
+- **Architecture figure:**  
+  ![PriceFM model architecture](https://raw.githubusercontent.com/runyao-yu/PriceFM/main/static/images/PriceFM_structure.PNG)  
+  *Figure: PriceFM’s feature-fusion/MoE projection, topology-informed graph block, and hierarchical quantile forecasting heads. Source: official project repository.*
+- **Artifacts and references:** [Official code repository](https://github.com/runyao-yu/PriceFM) · [Pretrained model](https://huggingface.co/RunyaoYu/PriceFM) · [Dataset](https://huggingface.co/datasets/RunyaoYu/PriceFM) · [Paper](https://arxiv.org/abs/2508.04875) · [Project page and forecast examples](https://runyao-yu.github.io/PriceFM/)
+- **Licensing:** The Hugging Face model and dataset pages display **CC BY 4.0**. This should not be assumed to cover the GitHub source code or every artifact; check the repository’s current license and each artifact’s terms separately before reuse.
+- **Why it is relevant to PowerFM:** PriceFM is a direct power-domain foundation-model example with a public model artifact, dataset, and paper. Its topology-aware, probabilistic forecasting setup makes it relevant to electricity markets, renewable integration, and cross-region forecasting.
 
 ## 2. PowerGridQA — Power-System Reasoning Dataset
 
-- **Resource type:** Domain-specific question–answer dataset for LLM training and evaluation.
+- **Resource type:** Domain-specific question–answer dataset for LLM training and evaluation; not a pretrained foundation model.
 - **Technical focus:** Power-system dynamics, grid operations, and reliability, using textbook-derived questions, operational lessons, and reasoning-oriented scenarios.
 - **Reported scale:** The repository README reports 23,368 textbook questions, 4,696 operational-insight questions, and 788 reasoning scenarios (28,852 pairs total).
 - **Why it is relevant:** It provides domain-specific reasoning data for evaluating or adapting language models beyond general-purpose benchmarks.
@@ -31,4 +36,4 @@ This note records candidate open-source resources that complement the projects a
 
 ## Scope and verification notes
 
-These resources are categorized separately because a pretrained model, a training dataset, and an evaluation benchmark are different technical artifacts. Project capabilities and dataset counts above are based on the linked project documentation and should be rechecked against the upstream repositories before reuse. This file does not claim that every resource is a foundation model, and it does not establish licensing beyond what the projects explicitly document.
+These resources are categorized separately because a pretrained model, a training dataset, and an evaluation benchmark are different technical artifacts. PriceFM is the direct foundation-model entry; PowerGridQA and PowerCodeBench are included as supporting resources for domain reasoning and executable evaluation. Model/data versions and licenses can change, so consult the linked upstream sources before reuse. This file does not change `README.md`, add software dependencies, or introduce implementation code.
