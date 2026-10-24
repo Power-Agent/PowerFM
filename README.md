@@ -51,6 +51,50 @@ Detailed datasets and fine-tuned models can be found below:
 
 **Datacenter Siting Assistant: Solvtra** is a tool leverages RAG by incorporating datacenter-specific data, including local regulations, environmental reports, and infrastructure details. As a result, it can provide detailed information for potential datacenter locations, such as land and electricity prices, and generate a map illustrating existing datacenter sites and relevant infrastructure.
 
+### GridSFM: Foundation Model for AC Optimal Power Flow
+
+#### [Explore GridSFM: Open Model, Code, and Power-Grid Data](https://github.com/microsoft/GridSFM)
+
+**GridSFM** is an open foundation model for approximating AC optimal power flow across different power-grid topologies. It represents the grid as a heterogeneous graph and predicts operating states such as bus voltages, generator dispatch, and branch flows, supporting scenario screening and warm-starting conventional AC-OPF solvers.
+
+![GridSFM architecture](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/image-2.jpg)
+
+Code, checkpoints, and the paper can be found below:
+- **Code and Data Pipeline**: [GitHub](https://github.com/microsoft/GridSFM)
+- **Released Checkpoints and Datasets**: [Hugging Face Collection](https://huggingface.co/collections/microsoft/gridsfm)
+- **Paper**: [GridSFM: A Foundation Model for AC Optimal Power Flow](https://www.microsoft.com/en-us/research/publication/gridsfm-a-foundation-model-for-ac-optimal-power-flow/)
+
+### PriceFM: Foundation Model for Probabilistic Electricity-Price Forecasting
+
+#### [Explore PriceFM: Model, Dataset, and Fine-Tuning Tutorial](https://github.com/runyao-yu/PriceFM)
+
+**PriceFM** is a foundation model for probabilistic day-ahead electricity-price forecasting across connected European market regions. It combines a Mixture-of-Experts feature projection with a sparse graph mask informed by transmission topology to generate quantile forecasts across regions and lead times.
+
+![PriceFM architecture](https://raw.githubusercontent.com/runyao-yu/PriceFM/main/Figure/PriceFM_structure.PNG)
+
+The pretrained model, dataset, and paper can be found below:
+- **Pretrained Model**: [Hugging Face Model Hub](https://huggingface.co/RunyaoYu/PriceFM)
+- **Dataset**: [Hugging Face Datasets](https://huggingface.co/datasets/RunyaoYu/PriceFM)
+- **Paper**: [arXiv:2508.04875](https://arxiv.org/abs/2508.04875)
+
+### PowerGridQA: Question-Answer Dataset for Power Systems
+
+#### [Explore the PowerGridQA Dataset](https://github.com/Hannaancode/PowerGridQA)
+
+**PowerGridQA** is a power-system question-answer dataset covering dynamics, operations, reliability, and reasoning. The repository reports 28,852 question-answer pairs, supporting the training and evaluation of language models on power-domain knowledge.
+
+- **Paper**: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11345118)
+
+### PowerCodeBench: Benchmark for LLM-Generated Power-System Code
+
+#### [Explore the PowerCodeBench Benchmark](https://github.com/huiwxing/PowerCodeBench)
+
+**PowerCodeBench** is an execution-validated benchmark for LLM-generated power-system analysis code. It is built on executable `pandapower` programs with reference results, and the repository describes 2,000 tasks.
+
+- **Paper**: [Research Paper](https://doi.org/10.1016/j.aei.2026.105328)
+
+> **Note:** Code, model, and dataset licenses may differ between projects and between components of the same project. Check them independently before reuse.
+
 
 
 ## 🤝 Contributing
